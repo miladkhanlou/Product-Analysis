@@ -41,8 +41,9 @@ This folder contains the non-ETL implementation:
   * Code-First Implementation: ETL pipeline scripts simulate API integration and data processing workflows.
 
 ---
-### Some Use cases and Analysis:
+### Some Use Cases and Analyses:
 #### Products with Decreasing Sales Rank:
+Identify products whose sales rank improved over time (a lower rank is better).
 ```
 +----------------------+------------+------------+
 |         name         |    date    | sales_rnk  |
@@ -52,6 +53,7 @@ This folder contains the non-ETL implementation:
 +----------------------+------------+------------+
 ```
 #### Track Daily Units Sold Over Time:
+Monitor how many units of each product were sold daily to identify sales trends.
 ```
 +----------------------+------------+-------------+
 |         name         |    date    | daily_sales |
@@ -64,6 +66,7 @@ This folder contains the non-ETL implementation:
 +----------------------+------------+-------------+
 ```
 #### Find Average Price Trends for Each Product:
+Calculate the average price for each product over a period of time.
 ```
 +----------------------+-----------+
 |         name         | avg_price |
