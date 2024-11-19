@@ -42,7 +42,7 @@ This folder contains the non-ETL implementation:
 
 ---
 ### Some Use cases and Analysis:
-Products with Decreasing Sales Rank:
+#### Products with Decreasing Sales Rank:
 ```
 +----------------------+------------+------------+
 |         name         |    date    | sales_rnk  |
