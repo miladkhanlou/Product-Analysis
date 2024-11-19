@@ -1,0 +1,30 @@
+CREATE TABLE Products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    asin VARCHAR(20) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    category VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Pricing (
+    price_id INT AUTO_INCREMENT PRIMARY KEY,
+    asin VARCHAR(20) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    currency VARCHAR(3) DEFAULT 'USD',
+    date DATE NOT NULL,
+    FOREIGN KEY (asin) REFERENCES Products(asin)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE Sales_Data (
+    sales_id INT AUTO_INCREMENT PRIMARY KEY,
+    asin VARCHAR(20) NOT NULL,
+    name VARCHAR(255),
+    category VARCHAR(255),
+    sales_rank INT,
+    units_sold INT,
+    date DATE NOT NULL,
+    FOREIGN KEY (asin) REFERENCES Products(asin)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);
