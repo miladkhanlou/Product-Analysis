@@ -2,7 +2,6 @@
 Due to the limited time available and the constraints in setting up access to eBay, Walmart, or Amazon APIs, I have provided the ETL pipeline code, which shows the process for extracting, transforming, and loading data, assuming access to the appropriate datasets from these sources.
 
 # ETL Pipeline for Product Analysis
-## Due to 
 ## Purpose:
 This project implements an ETL (Extract, Transform, Load) pipeline to:
 1. Extract product information, pricing, and sales data from the eBay API.
