@@ -1,6 +1,6 @@
 /********************************************
-*                Insert data                 *
- ********************************************/
+*                Insert data                *
+********************************************/
 INSERT INTO Products (asin, upc, ean, name, category, brand)
 VALUES 
 ('B08N5WRWNW', '012345678901', '4006381333931', 'Wireless Earbuds', 'Electronics', 'BrandA'),
@@ -25,7 +25,7 @@ VALUES
 
 /********************************************
  *               Update Data               *
- ********************************************/
+********************************************/
 -- Update Product name:
 SELECT * FROM Products;
 UPDATE Products
@@ -44,7 +44,7 @@ DELETE FROM Products WHERE product_id = 3;
 
 /****************************************************
 *                    Select Data                    *
- ****************************************************/
+****************************************************/
 -- Track Daily Units Sold Over Time:
 SELECT P.name, S.date, SUM(S.units_sold) AS daily_sales
 FROM Sales_Data S
