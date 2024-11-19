@@ -39,3 +39,36 @@ This folder contains the non-ETL implementation:
 * **ETL-Specific:**
   * Pipeline Automation: Automates the extraction, transformation, and loading of product data.
   * Code-First Implementation: ETL pipeline scripts simulate API integration and data processing workflows.
+
+---
+### Some Use cases and Analysis:
+Products with Decreasing Sales Rank:
+```
++----------------------+------------+------------+
+|         name         |    date    | sales_rnk  |
++----------------------+------------+------------+
+| Wireless Earbuds Pro | 2024-11-16 | 145        |
+| smartphone Case      | 2024-11-16 | 290        |
++----------------------+------------+------------+
+```
+#### Track Daily Units Sold Over Time:
+```
++----------------------+------------+-------------+
+|         name         |    date    | daily_sales |
++----------------------+------------+-------------+
+| Wireless Earbuds Pro | 2024-11-16	| 25          |
+| Wireless Earbuds Pro | 2024-11-15	| 20          |
+| Smartphone Case	     | 2024-11-16	| 18          |
+| Smartphone Case	     | 2024-11-15	| 15          |
+| Bluetooth Speaker	   | 2024-11-15	| 50          |
++----------------------+------------+-------------+
+```
+#### Find Average Price Trends for Each Product:
+```
++----------------------+-----------+
+|         name         | avg_price |
++----------------------+-----------+
+| Wireless Earbuds Pro |   47.99   |
+|  Bluetooth Speaker   | 99.990000 |
++----------------------+-----------+
+```
