@@ -6,9 +6,9 @@ The database is designed to:
 
 **Example Scenario**:
 - A retailer uses the database to monitor historical sales data and adjust prices dynamically based on trends in sales rank and pricing history.
-- Products with Decreasing Sales Rank
-- Analysts identify top-performing products based on sales rank and units sold.
-- Track Daily Units Sold Over Time
+- Identify products whose sales rank improved over time (a lower rank is better).
+- Monitor how many units of each product were sold daily to identify sales trends.
+- Calculate the average price for each product over a period of time.
 ---
 
 ## Table Structure Justification
