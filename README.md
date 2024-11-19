@@ -4,6 +4,8 @@
 This project focuses on organizing and analyzing product information using identifiers such as ASIN, UPC, and EAN. The goal is to design an efficient database structure to capture product details, pricing trends, and sales performance for analysis. The project is implemented in two approaches:
 1. **Non-ETL Approach**: Direct database schema creation and CRUD operations.
 2. **ETL Approach**: Automating data extraction, transformation, and loading using Python.
+## Note: 
+Due to time constraints, API integration was not fully implemented, but the provided code assumes access to datasets.
 
 ---
 
@@ -15,7 +17,6 @@ This folder contains the implementation of the ETL pipeline:
 - **`use_case.md`**: Describes the use case, table structure justification, and future expansion for the ETL approach.
 - **`etl_pipeline.py`**: Main ETL pipeline code to extract, transform, and load data.
 - **`extract_ebay_data.py`**: Python script to simulate data extraction from an API like eBay.
-  - **Note**: Due to time constraints, API integration was not fully implemented, but the provided code assumes access to datasets.
 
 ### 2. **`/non_etl`**
 This folder contains the non-ETL implementation:
