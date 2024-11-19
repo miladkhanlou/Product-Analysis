@@ -62,3 +62,9 @@ WHERE S.sales_rank < (
     WHERE SD.product_id = S.product_id
 )
 ORDER BY S.date DESC;
+
+-- Find Average Price Trends for Each Product:
+SELECT P.name, AVG(Pr.price) AS avg_price
+FROM Pricing Pr
+JOIN Products P ON Pr.product_id = P.product_id
+GROUP BY Pr.product_id;
