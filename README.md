@@ -1,9 +1,12 @@
 # Product Analysis Project
 
 ## Overview
-This project focuses on organizing and analyzing product information using identifiers such as ASIN, UPC, and EAN. The goal is to design an efficient database structure to capture product details, pricing trends, and sales performance for analysis. The project is implemented in two approaches:
+This project focuses on organizing and analyzing product information using identifiers such as ASIN, UPC, and EAN. The goal is to design an efficient database structure to capture product details, pricing trends, and sales performance for analysis. The project is implemented in two approaches. 
 1. **Non-ETL Approach**: Direct database schema creation and CRUD operations.
 2. **ETL Approach**: Automating data extraction, transformation, and loading using Python.
+- **An ERD diagram created in Lucidchart showing the database design with Primary Keys (PKs), Foreign Keys (FKs), and relationships.**
+  ![ERD](https://github.com/user-attachments/assets/c168f172-8edf-4952-ac52-cd0434af23c4)
+
 ## Note: 
 Due to time constraints, API integration was not fully implemented, but the provided code assumes access to datasets.
 
