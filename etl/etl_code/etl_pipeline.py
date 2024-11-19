@@ -4,7 +4,7 @@ import os
 from extract_ebay_data import extract_products, extract_pricing, extract_sales
 
 # Database connection
-engine = create_engine("mysql+pymysql://username:password@localhost/ProductAnalytics")
+engine = create_engine("mysql+pymysql://MyUserName:MyPassword@localhost/product_analysis")
 
 # Ensure transformed directory exists
 os.makedirs('transformed', exist_ok=True)
