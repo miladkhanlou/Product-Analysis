@@ -7,8 +7,10 @@ The ETL pipeline is designed to:
 3. Load the data into the database for further analysis and reporting.
 
 **Example Scenarios**:
-- Retailers use the database to track historical pricing trends and sales performance.
+- A retailer uses the database to monitor historical sales data and adjust prices dynamically based on trends in sales rank and pricing history.
+- Products with Decreasing Sales Rank
 - Analysts identify top-performing products based on sales rank and units sold.
+- Track Daily Units Sold Over Time
 
 ---
 
