@@ -13,7 +13,7 @@ Due to time constraints, API integration was not fully implemented, but the prov
 ---
 
 ## Project Structure
-### 1. **`/etl`**
+### 1. **`/Data Pipeline Approach`**
 This folder contains the implementation of the ETL pipeline:
 - **`schema.sql`**: Defines the database schema for the `Products`, `Pricing`, and `Sales_Data` tables.
 - **`crud_operations.sql`**: Provides SQL queries for testing data insertion, updates, deletions, and retrieval.
@@ -21,7 +21,7 @@ This folder contains the implementation of the ETL pipeline:
 - **`etl_pipeline.py`**: Main ETL pipeline code to extract, transform, and load data.
 - **`extract_ebay_data.py`**: Python script to simulate data extraction from an API like eBay.
 
-### 2. **`/non_etl`**
+### 2. **`/Schema-Driven Database Implementation`**
 This folder contains the non-ETL implementation:
 - **`schema.sql`**: Defines the database schema for the `Products`, `Pricing`, and `Sales_Data` tables.
 - **`crud_operations.sql`**: Provides SQL queries for data manipulation and retrieval.
@@ -31,17 +31,17 @@ This folder contains the non-ETL implementation:
 
 ### Features
 * **Common to Both Approaches:**
-  * Efficient Table Design:
-    * Products: Stores product metadata like ASIN, UPC, and category.
-    * Pricing: Tracks historical price trends.
-    * Sales_Data: Captures daily sales performance metrics.
-  * Scalable Schema: Designed for future expansion to include features like inventory tracking or customer reviews.
+  * **Efficient Table Design:**
+    * **Products:** Stores product metadata like ASIN, UPC, and category.
+    * **Pricing:** Tracks historical price trends.
+    * **Sales_Data:** Captures daily sales performance metrics.
+  * **Scalable Schema:** Designed for future expansion to include features like inventory tracking or customer reviews.
 * **ETL-Specific:**
-  * Pipeline Automation: Automates the extraction, transformation, and loading of product data.
-  * Code-First Implementation: ETL pipeline scripts simulate API integration and data processing workflows.
+  * **Pipeline Automation:** Automates the extraction, transformation, and loading of product data.
+  * **Code-First Implementation:** ETL pipeline scripts simulate API integration and data processing workflows.
 
 ---
-### Some Use Cases and Analyses:
+### Use Cases and Analysis:
 #### Products with Decreasing Sales Rank:
 Identify products whose sales rank improved over time (a lower rank is better).
 
@@ -61,7 +61,6 @@ Monitor how many units of each product were sold daily to identify sales trends.
 | Smartphone Case      | 2024-11-16 | 18          |
 | Smartphone Case      | 2024-11-15 | 15          |
 | Bluetooth Speaker    | 2024-11-15 | 50          |
-
 
 #### Find Average Price Trends for Each Product:
 Calculate the average price for each product over a period of time.
