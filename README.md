@@ -54,7 +54,7 @@ Identify products whose sales rank improved over time (a lower rank is better).
 ```
 #### Track Daily Units Sold Over Time:
 Monitor how many units of each product were sold daily to identify sales trends.
-```
+```sql
 +----------------------+------------+-------------+
 |         name         |    date    | daily_sales |
 +----------------------+------------+-------------+
