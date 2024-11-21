@@ -1,12 +1,14 @@
 # Product Analysis Project
 
 ## Overview
-This project focuses on organizing and analyzing product information using unique identifiers such as ASIN, UPC, and EAN. The goal is to design an efficient database structure to capture key product details, pricing trends, historical metrics, and sales performance for actionable analysis. The project employs two complementary approaches to achieve this:
+This project focuses on organizing and analyzing product information using unique identifiers such as `ASIN`, `UPC`, and `EAN` within a Snowflake Data Warehouse. The goal was to design an efficient and scalable database structure in Snowflake to capture key product details, pricing trends, historical metrics, and sales performance for actionable analysis. The project employs two complementary approaches to achieve this:
+
 
 1. **Direct Database Design and Management:**
-    * Focuses on schema creation, CRUD operations, and database design to enable efficient data organization and retrieval. This approach ensures optimal table structure for both read and write operations to support real-time and historical data queries.
+    * Focused on schema creation and CRUD operations within Snowflake to enable efficient data organization, scalability, and real-time query performance. This approach ensured optimal table design for both read and write operations to support trend analysis and data retrieval.
 1. **Dynamic Data Pipeline Integration (ETL Approach):**
-    * Implements an automated workflow for extracting, transforming, and loading data into the database, ensuring seamless integration of raw data sources with the structured database.
+   * Implemented an automated ETL process using Python and Snowflake connectors to extract raw data, transform it into an analyzable format, and load it into Snowflake tables. The ETL pipeline streamlined the integration of multiple data sources into a structured data warehouse.
+
 
 - **An ERD diagram created in Lucidchart showing the database design with Primary Keys (PKs), Foreign Keys (FKs), and relationships.**
   ![ERD](https://github.com/user-attachments/assets/c168f172-8edf-4952-ac52-cd0434af23c4)
@@ -35,11 +37,12 @@ This folder contains the non-ETL implementation:
 
 ### Features
 1. **Database Design:**
-    * An Entity-Relationship Diagram (ERD) with at least three interconnected tables, including one for time-series data (daily or monthly) to track trends such as price changes and sales ranks.
+    * An Entity-Relationship Diagram (ERD) with at least three interconnected tables in Snowflake, including a time-series table for tracking trends such as price changes and sales ranks over daily or monthly intervals.
     * Optimized table structure for scalability, maintainability, and data integrity.
+    * Leveraged Snowflake’s scalability and query performance to handle growing datasets efficiently.
 
 2. **CRUD Operations:**
-    * Read Operations: Enable querying of current product information, historical trend analysis, and metadata retrieval.
+    * Read Operations: Enabled querying of real-time product details, historical trends, and metadata.
     * Write Operations: Support the addition of new product entries for consistent database updates.
 
 3. **Use Case Definition:**
