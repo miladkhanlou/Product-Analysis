@@ -54,13 +54,13 @@ Identify products whose sales rank improved over time (a lower rank is better).
 ```
 #### Track Daily Units Sold Over Time:
 Monitor how many units of each product were sold daily to identify sales trends.
-```sql
+```txt
 +----------------------+------------+-------------+
 |         name         |    date    | daily_sales |
 +----------------------+------------+-------------+
 | Wireless Earbuds Pro | 2024-11-16	| 25          |
 | Wireless Earbuds Pro | 2024-11-15	| 20          |
-| Smartphone Case  | 2024-11-16	| 18          |
+| Smartphone Case      | 2024-11-16	| 18          |
 | Smartphone Case	     | 2024-11-15	| 15          |
 | Bluetooth Speaker	   | 2024-11-15	| 50          |
 +----------------------+------------+-------------+
