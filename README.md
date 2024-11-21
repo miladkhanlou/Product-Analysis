@@ -44,34 +44,29 @@ This folder contains the non-ETL implementation:
 ### Some Use Cases and Analyses:
 #### Products with Decreasing Sales Rank:
 Identify products whose sales rank improved over time (a lower rank is better).
-```
-+----------------------+------------+------------+
+
 |         name         |    date    | sales_rnk  |
-+----------------------+------------+------------+
+|----------------------|------------|------------|
 | Wireless Earbuds Pro | 2024-11-16 | 145        |
 | smartphone Case      | 2024-11-16 | 290        |
-+----------------------+------------+------------+
-```
+
+
 #### Track Daily Units Sold Over Time:
 Monitor how many units of each product were sold daily to identify sales trends.
-```txt
-+----------------------+------------+-------------+
-|         name         |    date    | daily_sales |
-+----------------------+------------+-------------+
-| Wireless Earbuds Pro | 2024-11-16	| 25          |
-| Wireless Earbuds Pro | 2024-11-15	| 20          |
-| Smartphone Case      | 2024-11-16	| 18          |
-| Smartphone Case	     | 2024-11-15	| 15          |
-| Bluetooth Speaker	   | 2024-11-15	| 50          |
-+----------------------+------------+-------------+
-```
+
+| Name                 | Date       | Daily Sales |
+|----------------------|------------|-------------|
+| Wireless Earbuds Pro | 2024-11-16 | 25          |
+| Wireless Earbuds Pro | 2024-11-15 | 20          |
+| Smartphone Case      | 2024-11-16 | 18          |
+| Smartphone Case      | 2024-11-15 | 15          |
+| Bluetooth Speaker    | 2024-11-15 | 50          |
+
+
 #### Find Average Price Trends for Each Product:
 Calculate the average price for each product over a period of time.
-```
-+----------------------+-----------+
+
 |         name         | avg_price |
-+----------------------+-----------+
+|----------------------|-----------|
 | Wireless Earbuds Pro |   47.99   |
 |  Bluetooth Speaker   | 99.990000 |
-+----------------------+-----------+
-```
