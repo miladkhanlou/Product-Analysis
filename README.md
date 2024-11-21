@@ -46,7 +46,7 @@ This folder contains the non-ETL implementation:
     * **Tracking pricing trends**, **sales rank movements**, and **inventory levels** to *identify top-performing products or develop pricing strategies*.
     * The chosen table structure supports the use case by ensuring efficient data retrieval, trend analysis, and scalability for growing datasets.
 
-4. **ETL Workflow (Optional Bonus):**
+4. **ETL Workflow:**
     * A detailed ETL process diagram demonstrating the flow of data from raw sources through transformations into the database.
     * Explanation of how the ETL supports efficient data processing and aligns with the database design.
 
