@@ -38,15 +38,15 @@ This folder contains the non-ETL implementation:
     * An Entity-Relationship Diagram (ERD) with at least three interconnected tables, including one for time-series data (daily or monthly) to track trends such as price changes and sales ranks.
     * Optimized table structure for scalability, maintainability, and data integrity.
 
-2. CRUD Operations:
+2. **CRUD Operations:**
     * Read Operations: Enable querying of current product information, historical trend analysis, and metadata retrieval.
     * Write Operations: Support the addition of new product entries for consistent database updates.
 
-3. Use Case Definition:
-    * Example Use Case: Tracking pricing trends, sales rank movements, and inventory levels to identify top-performing products or develop pricing strategies.
+3. **Use Case Definition:**
+    * **Tracking pricing trends**, **sales rank movements**, and **inventory levels** to *identify top-performing products or develop pricing strategies*.
     * The chosen table structure supports the use case by ensuring efficient data retrieval, trend analysis, and scalability for growing datasets.
 
-4. ETL Workflow (Optional Bonus):
+4. **ETL Workflow (Optional Bonus):**
     * A detailed ETL process diagram demonstrating the flow of data from raw sources through transformations into the database.
     * Explanation of how the ETL supports efficient data processing and aligns with the database design.
 
