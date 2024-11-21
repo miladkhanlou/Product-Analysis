@@ -1,9 +1,13 @@
 # Product Analysis Project
 
 ## Overview
-This project focuses on organizing and analyzing product information using identifiers such as ASIN, UPC, and EAN. The goal is to design an efficient database structure to capture product details, pricing trends, and sales performance for analysis. The project is implemented in two approaches. 
-1. **Non-ETL Approach**: Direct database schema creation and CRUD operations.
-2. **ETL Approach**: Automating data extraction, transformation, and loading using Python.
+This project focuses on organizing and analyzing product information using unique identifiers such as ASIN, UPC, and EAN. The goal is to design an efficient database structure to capture key product details, pricing trends, historical metrics, and sales performance for actionable analysis. The project employs two complementary approaches to achieve this:
+
+1. **Direct Database Design and Management:**
+    * Focuses on schema creation, CRUD operations, and database design to enable efficient data organization and retrieval. This approach ensures optimal table structure for both read and write operations to support real-time and historical data queries.
+1. **Dynamic Data Pipeline Integration (ETL Approach):**
+    * Implements an automated workflow for extracting, transforming, and loading data into the database, ensuring seamless integration of raw data sources with the structured database.
+
 - **An ERD diagram created in Lucidchart showing the database design with Primary Keys (PKs), Foreign Keys (FKs), and relationships.**
   ![ERD](https://github.com/user-attachments/assets/c168f172-8edf-4952-ac52-cd0434af23c4)
 
@@ -30,15 +34,21 @@ This folder contains the non-ETL implementation:
 ---
 
 ### Features
-* **Common to Both Approaches:**
-  * **Efficient Table Design:**
-    * **Products:** Stores product metadata like ASIN, UPC, and category.
-    * **Pricing:** Tracks historical price trends.
-    * **Sales_Data:** Captures daily sales performance metrics.
-  * **Scalable Schema:** Designed for future expansion to include features like inventory tracking or customer reviews.
-* **ETL-Specific:**
-  * **Pipeline Automation:** Automates the extraction, transformation, and loading of product data.
-  * **Code-First Implementation:** ETL pipeline scripts simulate API integration and data processing workflows.
+1. **Database Design:**
+    * An Entity-Relationship Diagram (ERD) with at least three interconnected tables, including one for time-series data (daily or monthly) to track trends such as price changes and sales ranks.
+    * Optimized table structure for scalability, maintainability, and data integrity.
+
+2. CRUD Operations:
+    * Read Operations: Enable querying of current product information, historical trend analysis, and metadata retrieval.
+    * Write Operations: Support the addition of new product entries for consistent database updates.
+
+3. Use Case Definition:
+    * Example Use Case: Tracking pricing trends, sales rank movements, and inventory levels to identify top-performing products or develop pricing strategies.
+    * The chosen table structure supports the use case by ensuring efficient data retrieval, trend analysis, and scalability for growing datasets.
+
+4. ETL Workflow (Optional Bonus):
+    * A detailed ETL process diagram demonstrating the flow of data from raw sources through transformations into the database.
+    * Explanation of how the ETL supports efficient data processing and aligns with the database design.
 
 ---
 ### Use Cases and Analysis:
