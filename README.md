@@ -60,7 +60,7 @@ Monitor how many units of each product were sold daily to identify sales trends.
 +----------------------+------------+-------------+
 | Wireless Earbuds Pro | 2024-11-16	| 25          |
 | Wireless Earbuds Pro | 2024-11-15	| 20          |
-| Smartphone Case	     | 2024-11-16	| 18          |
+| Smartphone Case  | 2024-11-16	| 18          |
 | Smartphone Case	     | 2024-11-15	| 15          |
 | Bluetooth Speaker	   | 2024-11-15	| 50          |
 +----------------------+------------+-------------+
